@@ -1,0 +1,70 @@
+<?php
+
+include('signup.php');
+include('konekcija.php');
+
+?>
+
+<!DOCTYPE html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+		<title>PC SHOP</title>
+        <meta name="description" content="Dobrodosli u pc shop, prijavi se| Registruj se."
+		
+		<link  rel="shortcut icon" type="image/png" href="img/fav.png">		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-153412299-1');
+</script>
+	
+	<body class="bg">
+		<nav>
+			<img src="slike/fan.png" alt="fan">
+		</nav>
+					
+		<div class="pocetna">
+			
+			<h1>DOBRODOSLI U PC SHOP</h1>
+		<form action="prijavise.php" method="POST">
+			<h3>PRIJAVI SE</h3>
+			<h4>E-MAIL:</h4>
+				
+			<input type="text" name="E_mail">
+			<h4>SIFRA:</h4>
+			<input type="password" name="Sifra"><br><br>
+			<button type="submit" class="button button1" name="logindugme">Prijavi se</button>
+			
+		</form>
+		<br>
+		
+		<form action="signup.php" method="POST">
+			<h3>REGISTRUJ SE</h3>
+			<h4>IME:</h4>
+				<input type="text" name="ime">
+			<h4>E-MAIL:</h4>
+			<input type="text" name="e_mail">
+			<h4>LOZINKA:</h4>
+			<input type="password" name="sifra"><br><br>
+			<button type="submit" name="signupdugme">Registruj se</button>
+		</form>
+
+        
+		</div>
+
+		
+
+
+		<footer>
+			<p>STRAHINJA DRINIC ALL RIGHTS RESERVED 2019 ©</p>
+		</footer>
+	</body>
+	</head>
+</html>

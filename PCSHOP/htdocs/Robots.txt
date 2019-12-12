@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: 
+Allow: /img
+
+Sitemap: http://sdpcshop.rf.gd/sitemap.xml
